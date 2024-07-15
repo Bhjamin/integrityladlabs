@@ -7,22 +7,23 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      lime: "#afff26",
-      brightblue: "#33ddff",
-      lightgray: "#afb6bb",
-    },
     extend: {
+      screens: {
+        tablet: "900px",
+      },
+      colors: {
+        lime: "#AEFE25",
+        brightblue: "#33ddff",
+        lightgray: "#afb6bb",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      screens: {
-        tablet: "900px",
-      },
     },
   },
   plugins: [],
 };
+
 export default config;

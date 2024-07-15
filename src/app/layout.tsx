@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { League_Gothic } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const league_gothic = League_Gothic({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Integrity Lad Labs",
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className="overflow-x-hidden" lang="en">
+      <body className={league_gothic.className}>{children}</body>
     </html>
   );
 }
