@@ -70,7 +70,7 @@ const Menu = () => {
         {isMenuOpen && (
           <>
             <motion.div
-              className="absolute top-[70px] h-12"
+              className="absolute top-[70px] h-12 bg-lime bg-opacity-50 w-full"
               initial={{ x: 150 }}
               animate={{ x: 0 }}
               exit={{ x: 150 }}
