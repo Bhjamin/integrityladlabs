@@ -1,8 +1,13 @@
+"use client";
 import Menu from "./menu";
+import { useMotionValue, useVelocity } from "framer-motion";
+import { useRef } from "react";
 
 const Nav = () => {
+  const navRef = useRef();
+
   return (
-    <div className="z-[999] w-full sticky top-0 bg-lightgray border-b-[3px] border-brightblue justify-around flex h-[70px] px-4">
+    <div className="z-[999] w-full sticky top-0 shadow shadow-brightblue bg-lightgray justify-around flex h-[70px] px-4">
       <div>
         <a href="/" className="flex h-full items-center">
           <img src="/logo2.png" alt="logo" className="h-full" />

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import ProductCard from "./productCard";
 
 const products = [
@@ -38,11 +39,11 @@ const ProductsView = () => {
     <section className="w-full grid grid-cols-2 my-[137px]">
       {products.map((product, i) => {
         return (
-          <>
+          <Fragment key={product.name}>
             {i % 2 !== 0 && <div className="col-span-1" />}
             <ProductCard product={product} />
             {i % 2 === 0 && <div className="col-span-1" />}
-          </>
+          </Fragment>
         );
       })}
     </section>

@@ -1,3 +1,4 @@
+"use client";
 import Hero from "./components/hero";
 import Nav from "./components/nav";
 import ProductsView from "./components/productsView";
