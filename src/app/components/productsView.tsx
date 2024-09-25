@@ -36,7 +36,7 @@ const products = [
 
 const ProductsView = () => {
   return (
-    <section className="w-full grid grid-cols-2 my-[137px]">
+    <section className="w-full grid grid-cols-2">
       {products.map((product, i) => {
         return (
           <Fragment key={product.name}>
