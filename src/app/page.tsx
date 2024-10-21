@@ -5,7 +5,7 @@ import ProductsView from "./components/productsView";
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center bg-black">
       <Nav />
       <Hero />
       <ProductsView />
